@@ -433,6 +433,10 @@ summary:active .plus {
     row-gap: 2rem;
 }
 
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
 .contact a {
     color: #62594d;
     font-size: 1.2rem;
