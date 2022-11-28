@@ -41,9 +41,10 @@ nav {
     width: 100%;
 }
 
-.link {
+.link button{
     display: flex;
     justify-content: center;
+    align-items: center;
     align-items: center;
 } 
 
@@ -51,7 +52,7 @@ button {
     cursor: pointer;
 }
 
-.sign-in {
+.link button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -180,24 +181,24 @@ input::placeholder {
     font-size: 1.6rem;
 }
 
-.enjoy-image {
-    width: 35rem;
+.enjoy-video {
+    width: 100%;
     position: relative;
-    z-index: 1;
 }
 
 .video {
-    width: 25.5rem;
     position: absolute;
-    top: 154%;
-    right: 13%;
+    width: 100%;
+    top: 20%;
+    left: 13%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
     z-index: 0;
 }
 
 .video video {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
 }
 
 .enjoy-image img {
@@ -218,11 +219,8 @@ input::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.el-image {
+    width: 55rem;
     position: relative;
-    width: 30rem;
 }
 
 .el-image img {
@@ -253,17 +251,21 @@ input::placeholder {
 }
 
 .downloading{
-    border:2px solid #222222;
-    background-color: #000000;
-    padding: .5rem;
-    border-radius: 15px;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 22em;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 275%;
-    width: 25%;
-    /* height: 80px; */
-    z-index: 2;
+    align-items: center;
+    background-color: black;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    height: 6rem;
+    padding: 0.25rem 0.6rem;
+    gap: 15px;
 }
 
 .downloading div{
@@ -289,7 +291,7 @@ input::placeholder {
     display: flex;
     flex-direction: column;
     row-gap: .3rem;
-    margin-left: -3rem;
+    margin-left: -2rem;
 }
 
 .gif{
@@ -310,9 +312,6 @@ input::placeholder {
 .watch {
     flex-direction: column;
     row-gap: 1rem;
-    /* width: 45%;
-    min-width: 50%; */
-    /* padding: 0 40rem 0 0; */
 }
 
 .watch h1 {
@@ -450,8 +449,6 @@ summary:active .plus {
 .f-links a {
     color: #6b6a6a;
 }
-
-/* #62594d */
 
 .f-links {
     column-gap: 6rem;
