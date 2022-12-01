@@ -5,6 +5,10 @@
     font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -111,6 +115,7 @@ button {
 }
 
 .email p {
+    text-align: center;
     font-size: 1.2rem;
 }
 
@@ -155,6 +160,11 @@ button {
 
 input::placeholder {
     font-size: 1rem;
+}
+
+input:focus {
+    border: 1px solid #005ce6;
+    outline: none;
 }
 
 .section-one {
@@ -219,7 +229,7 @@ input::placeholder {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 55rem;
+    width: 100%;
     position: relative;
 }
 
@@ -408,7 +418,7 @@ summary:active .plus {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
   
-  }
+}
 
 .details {
     background-color: #303030;
@@ -431,7 +441,6 @@ summary:active .plus {
     background-color: #000000;
     color: #6b6a6a;
     padding: 7rem 13rem;
-    column-gap: 2rem;
     flex-direction: column;
     row-gap: 2rem;
     font-size: .9rem;
@@ -457,4 +466,293 @@ summary:active .plus {
 .links {
     flex-direction: column;
     row-gap: 1rem;
+}
+
+@media (max-width: 900px) {
+    .unlimited {
+        width: 70%;
+    }
+
+    form {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .input input {
+        border-radius: 2px;
+    }
+
+    .get-started button {
+        font-size: 1.1rem;
+        padding: .4rem 1rem;
+        font-weight: 500;
+        border-radius: 3px;
+    }
+
+    .get-started img {
+        width: 1rem;
+    }
+
+    .section-one {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        row-gap: 1rem;
+    }
+
+    .section-two {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+    }
+
+    .download-text {
+        text-align: center;
+    }
+
+    .downloading {
+        max-width: 26em;
+    }
+
+    .stranger {
+        display: flex;
+        flex-direction: column;
+        row-gap: .3rem;
+        margin-left: -5rem;
+    }
+
+    .watch {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-four {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        text-align: center;
+    }
+
+    .kids-image {
+        width: 40rem;
+    }
+
+    .faq {
+        text-align: center;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    .footer-container {
+        width: 100%;
+        padding: 7rem 6rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .unlimited {
+        width: 90%;
+    }
+
+    .el-image {
+        width: 30rem;
+    }
+
+    .downloading {
+        max-width: 22em;
+    }
+
+    .kids-image {
+        width: 30rem;
+    }
+
+    .section-five {
+        padding: 7rem 4rem;
+    }
+
+    .faq h1 {
+        font-size: 2.6rem;
+    }
+
+    summary p {
+        font-size: 1.2rem;
+    }
+
+    .details {
+        font-size: 1.2rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .footer-container {
+        max-width: 100%;
+        padding: 7rem 4rem;
+    }
+
+    .f-links {
+        column-gap: 1.5rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    nav {
+        padding: .5rem 2rem .5rem 1rem;
+    }
+
+    .unlimited-email {
+        padding: 8rem 1rem;
+    } 
+
+    .unlimited h1 {
+        line-height: 1em;
+    }
+
+    .unlimited {
+        width: 100%;
+    }
+
+    .email {
+        padding: 0 2rem;
+    }
+
+    .input {
+        width: 20rem;
+    }
+
+    .section-one,
+    .section-two,
+    .section-three,
+    .section-four,
+    .section-five,
+    .footer-container {
+        padding: 7rem 2rem;
+    }
+
+    .section-five {
+        padding: 7rem 1rem;
+    }
+
+    .enjoy-text h1,
+    .download-text h1,
+    .watch h1,
+    .kids-text h1 {
+        font-size: 3rem;
+    }
+    
+    .enjoy-text p,
+    .download-text p,
+    .watch p,
+    .kids-text p {
+        font-size: 1.2rem;
+    }
+
+    .download-image {
+        width: 100%;
+    }
+
+    .stranger {
+        margin-left: -1rem;
+    }
+
+    .kids-image {
+        width: 25rem;
+    }
+
+    .f-links {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .footer-container {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 330px) {
+    nav {
+        padding: .5rem 2rem .5rem 1rem;
+    }
+
+    .unlimited h1 {
+        font-size: 3rem;
+    }
+
+    .unlimited p {
+        font-size: 1.2rem;
+    }
+
+    .email p {
+        font-size: .8rem;
+    }
+
+    .input {
+        width: 18rem;
+    }
+
+    .section-one,
+    .section-two,
+    .section-three,
+    .section-four,
+    .section-five,
+    .footer-container {
+        padding: 7rem 1rem;
+    }
+
+    .enjoy-text h1,
+    .download-text h1,
+    .watch h1,
+    .kids-text h1 {
+        font-size: 2rem;
+    }
+    
+    .enjoy-text p,
+    .download-text p,
+    .watch p,
+    .kids-text p {
+        font-size: 1rem;
+    }
+
+    .el-image {
+        width: 20rem;
+    }
+
+    .downloading{
+        max-width: 19em;
+    }
+
+    .stranger h2{
+        font-size: .9rem;
+    }
+    
+    .stranger h3{
+        font-size: .7rem;
+    }
+    
+    .stranger {
+        display: flex;
+        flex-direction: column;
+        row-gap: .3rem;
+        margin-left: -2rem;
+    }
+
+    .kids-image {
+        width: 20rem;
+    }
+
+    .f-links {
+        flex-wrap: wrap;
+    }
 }
